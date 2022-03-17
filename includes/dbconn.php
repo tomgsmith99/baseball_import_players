@@ -1,6 +1,6 @@
 <?php
 
-include "/Users/tomsmith/projects/baseball_preseason/.env.php";
+include "/Users/tomgsmith99/projects/baseball_import_players/.env.php";
 
 function getDBconn($dbname = "baseball") {
 
@@ -13,7 +13,7 @@ function getDBconn($dbname = "baseball") {
 			. $mysqli->connect_error);
 	}
 	else {
-		// echo "<p>The db connection worked.";
+		echo "The db connection worked.\n";
 	}
 
 	return $mysqli;

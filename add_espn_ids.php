@@ -8,7 +8,7 @@ $dbconn = getDBconn();
 
 /*********************************/
 
-$query = "SELECT * FROM players_current_view WHERE espn_stats_id = 0 LIMIT 100";
+$query = "SELECT * FROM players_with_no_espn_ids LIMIT 100";
 
 $result = mysqli_query($dbconn, $query);
 
